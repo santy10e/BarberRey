@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BARBER REY ESTUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Bebas+Neue&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Barber Rey</a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#experiencia">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="nav-cta">Reservar cita</a>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#experiencia" class="mobile-link">Nosotros</a>
+    <a href="#galeria" class="mobile-link">Galería</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+    <a href="#contacto" class="mobile-link mobile-menu-cta">Reservar cita</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <!-- Imagen de fondo del hero -->
+    <img
+      class="hero-img"
+      src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=80&auto=format&fit=crop"
+      alt="Barbería interior"
+      loading="eager"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-slash"></div>
+    <div class="hero-vertical-text">BARBER REY ESTUDIO</div>
+    <div class="hero-year">EST. 2015</div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span>Peluquería · Barbería · Estilo</span>
+      </div>
+      <h1 class="hero-title">
+        El arte<br>
+        de <em>destacar</em><br>
+        tu esencia.
+      </h1>
+      <p class="hero-sub">
+        La excelencia y la innovación se unen para ofrecerte cortes y tratamientos de vanguardia. Atendemos a toda la familia, garantizando un look renovado en cada servicio.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary"><span>Reservar cita</span></a>
+        <a href="#servicios" class="btn-ghost">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2K+</div>
+        <div class="stat-label">Clientes satisfechos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Dedicación</div>
+      </div>
+    </div>
+
+    <div class="scroll-line"><span>Scroll</span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item">CORTE CLÁSICO</div>
+      <div class="marquee-item">FADE PROFESIONAL</div>
+      <div class="marquee-item">DISEÑO DE BARBA</div>
+      <div class="marquee-item">AFEITADO TRADICIONAL</div>
+      <div class="marquee-item">TRATAMIENTOS CAPILARES</div>
+      <div class="marquee-item">SERVICIO FAMILIAR</div>
+      <div class="marquee-item">CORTE CLÁSICO</div>
+      <div class="marquee-item">FADE PROFESIONAL</div>
+      <div class="marquee-item">DISEÑO DE BARBA</div>
+      <div class="marquee-item">AFEITADO TRADICIONAL</div>
+      <div class="marquee-item">TRATAMIENTOS CAPILARES</div>
+      <div class="marquee-item">SERVICIO FAMILIAR</div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-title-block">
+        <div class="section-label">Nuestros servicios</div>
+        <h2 class="section-title">Lo que<br><em>hacemos</em></h2>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <span class="service-icon">✂️</span>
+        <div class="service-name">Corte Clásico</div>
+        <p class="service-desc">Corte de cabello tradicional con acabados de precisión milimétrica. Para el hombre que sabe lo que quiere.</p>
+        <div class="service-price">$15 <span>desde</span></div>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <span class="service-icon">🪒</span>
+        <div class="service-name">Fade & Degradado</div>
+        <p class="service-desc">Transiciones perfectas de cero a infinito. Técnica moderna con máquinas de última generación.</p>
+        <div class="service-price">$20 <span>desde</span></div>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <span class="service-icon">🧔</span>
+        <div class="service-name">Diseño de Barba</div>
+        <p class="service-desc">Perfilado, arreglo y diseño de barba. Cada vello en su lugar, cada línea perfecta.</p>
+        <div class="service-price">$12 <span>desde</span></div>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">04</div>
+        <span class="service-icon">💆</span>
+        <div class="service-name">Afeitado Navaja</div>
+        <p class="service-desc">Ritual de afeitado clásico con navaja, toalla caliente y productos premium. Una experiencia única.</p>
+        <div class="service-price">$18 <span>desde</span></div>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">05</div>
+        <span class="service-icon">👨‍👦</span>
+        <div class="service-name">Corte Infantil</div>
+        <p class="service-desc">Para los más pequeños de la familia. Cortes divertidos y precisos en un ambiente tranquilo y amigable.</p>
+        <div class="service-price">$10 <span>desde</span></div>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card">
+        <div class="service-number">06</div>
+        <span class="service-icon">✨</span>
+        <div class="service-name">Tratamiento Capilar</div>
+        <p class="service-desc">Hidratación profunda, keratina y tratamientos especializados para un cabello con vida y brillo.</p>
+        <div class="service-price">$25 <span>desde</span></div>
+        <div class="service-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA / ABOUT -->
+  <section id="experiencia">
+    <div class="exp-left">
+      <blockquote class="exp-quote">
+        "Cada corte cuenta una historia. La tuya merece ser extraordinaria."
+      </blockquote>
+      <p class="exp-body">
+        En Barber Rey Estudio combinamos técnicas tradicionales de barbería con las tendencias más actuales. Nuestro equipo de profesionales está en constante formación para ofrecerte siempre lo mejor.<br><br>
+        Más que una barbería, somos un espacio donde el estilo, la conversación y el bienestar se encuentran. Porque un buen corte transforma mucho más que el cabello.
+      </p>
+      <div class="badge-row">
+        <div class="badge">Corte Preciso</div>
+        <div class="badge">Ambiente Premium</div>
+        <div class="badge">Toda la Familia</div>
+        <div class="badge">Reserva Online</div>
+      </div>
+    </div>
+    <div class="exp-right">
+      <div class="exp-image-frame">
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+        <!-- Foto del barbero / local -->
+        <img
+          class="exp-photo"
+          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80&auto=format&fit=crop&crop=top"
+          alt="Barbero profesional"
+          loading="lazy"
+        />
+        <div class="years-badge">
+          <strong>8+</strong>
+          <small>años de arte</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-title-block">
+        <div class="section-label">Nuestro trabajo</div>
+        <h2 class="section-title">El arte<br>en cada <em>corte</em></h2>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- Grande izquierda -->
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=900&q=80&auto=format&fit=crop"
+          alt="Fade clásico"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><div class="gallery-overlay-text">Fade Clásico</div></div>
+      </div>
+
+      <!-- Derecha arriba -->
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80&auto=format&fit=crop"
+          alt="Diseño de barba"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><div class="gallery-overlay-text">Diseño de Barba</div></div>
+      </div>
+
+      <!-- Derecha abajo -->
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80&auto=format&fit=crop&crop=center"
+          alt="Corte moderno"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><div class="gallery-overlay-text">Undercut Moderno</div></div>
+      </div>
+
+      <!-- Fila inferior izquierda -->
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1512864084360-7c0d4ee74a9e?w=600&q=80&auto=format&fit=crop"
+          alt="Afeitado con navaja"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><div class="gallery-overlay-text">Afeitado Navaja</div></div>
+      </div>
+
+      <!-- Fila inferior derecha -->
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80&auto=format&fit=crop"
+          alt="Interior de la barbería"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><div class="gallery-overlay-text">Nuestro Estudio</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-title-block">
+        <div class="section-label">Reserva tu cita</div>
+        <h2 class="section-title">¿Listo para<br><em>tu cambio?</em></h2>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h3 class="contact-tagline">Visítanos y vive<br>la <em>experiencia Rey</em></h3>
+        <p class="contact-desc">Reserva tu cita y deja que nuestros expertos diseñen el look perfecto para ti. Sin prisas, con toda la atención que mereces.</p>
+        <div class="contact-cards">
+
+          <!-- WhatsApp — CTA principal -->
+          <a class="contact-card contact-card--whatsapp"
+            href="https://api.whatsapp.com/send?phone=593967266275&text=Hola%2C%20mi%20nombre%20es%20_____%20y%20quisiera%20agendar%20una%20cita%20en%20Barber%20Rey.%20%C2%BFMe%20podr%C3%ADan%20indicar%20la%20disponibilidad%2C%20por%20favor%3F"
+            target="_blank" rel="noopener">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.528 5.855L0 24l6.335-1.508A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.368l-.358-.213-3.722.885.916-3.619-.234-.371A9.818 9.818 0 1112 21.818z"/></svg>
+            </div>
+            <div class="contact-card__body">
+              <span class="contact-card__label">Reserva por WhatsApp</span>
+              <span class="contact-card__value">+593 967 266 275</span>
+            </div>
+            <span class="contact-card__arrow">→</span>
+            <div class="wsp-pulse"></div>
+          </a>
+
+          <!-- Horario con estado en vivo -->
+          <div class="contact-card contact-card--hours">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 3"/></svg>
+            </div>
+            <div class="contact-card__body">
+              <span class="contact-card__label">Horario de atención</span>
+              <span class="contact-card__value">Lun – Sáb &nbsp;·&nbsp; 10:00 am – 10:00 pm</span>
+              <span class="contact-card__sub">Domingos: Cerrado</span>
+            </div>
+            <div class="status-badge" id="statusBadge">
+              <span class="status-dot" id="statusDot"></span>
+              <span class="status-text" id="statusText">…</span>
+            </div>
+          </div>
+
+          <!-- Dirección con link a mapa -->
+          <div class="contact-card contact-card--address">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 13 6 13s6-8.5 6-13c0-3.314-2.686-6-6-6z"/><circle cx="12" cy="8" r="2"/></svg>
+            </div>
+            <div class="contact-card__body">
+              <span class="contact-card__label">Dirección</span>
+              <span class="contact-card__value">Miguel Riofrío, entre Lauro Guerrero y Ramón Pinto</span>
+              <span class="contact-card__sub">Loja, Ecuador</span>
+            </div>
+            <a class="map-btn"
+              href="https://maps.google.com/?q=Barber+Rey+Loja+Ecuador+Miguel+Riofrio"
+              target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              Ver mapa
+            </a>
+          </div>
+
+          <!-- Instagram -->
+          <a class="contact-card contact-card--instagram"
+            href="https://www.instagram.com/barberreyoficial"
+            target="_blank" rel="noopener">
+            <div class="contact-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div class="contact-card__body">
+              <span class="contact-card__label">Síguenos</span>
+              <span class="contact-card__value">@barberreyoficial</span>
+            </div>
+            <span class="contact-card__arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nombre</label>
+              <input class="form-input" type="text" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Teléfono</label>
+              <input class="form-input" type="tel" placeholder="+1 555 000 0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Servicio</label>
+            <select class="form-select">
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option>Corte Clásico</option>
+              <option>Fade & Degradado</option>
+              <option>Diseño de Barba</option>
+              <option>Afeitado Navaja</option>
+              <option>Corte Infantil</option>
+              <option>Tratamiento Capilar</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Fecha</label>
+              <input class="form-input" type="date">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Hora preferida</label>
+              <select class="form-select">
+                <option>9:00 am</option><option>10:00 am</option><option>11:00 am</option>
+                <option>12:00 pm</option><option>1:00 pm</option><option>2:00 pm</option>
+                <option>3:00 pm</option><option>4:00 pm</option><option>5:00 pm</option>
+                <option>6:00 pm</option><option>7:00 pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensaje (opcional)</label>
+            <textarea class="form-textarea" placeholder="¿Algo que debamos saber?"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Solicitar cita ahora</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Barber Rey Estudio</span>
+        <span class="footer-tagline">Peluquería · Barbería · Estilo</span>
+      </div>
+      <div>
+        <div class="footer-nav-title">Navegación</div>
+        <ul class="footer-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-nav-title">Síguenos</div>
+        <div class="footer-social">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">WhatsApp</a>
+          <a href="#" class="social-link">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Barber Rey Estudio. Todos los derechos reservados.</span>
+      <span class="footer-made">Hecho con ✦ y precisión</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
